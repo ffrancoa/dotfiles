@@ -1,0 +1,10 @@
+configuration {
+  display-drun:       "Applications";
+  show-icons:         true;
+  icon-theme:         "Papirus";
+  font:	              "Iosevka Term Semibold 11";
+}
+
+@theme "~/.config/rofi/theme.rasi"
+@import "~/.config/rofi/gruvbox.rasi"
+

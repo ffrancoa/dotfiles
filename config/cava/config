@@ -1,0 +1,26 @@
+[output]
+
+# Output method. Can be 'ncurses', 'noncurses', 'raw', 'noritake' or 'sdl'.
+# 'noncurses' uses a custom framebuffer technique and prints only changes
+# from frame to frame in the terminal. 'ncurses' is default if supported.
+method = ncurses
+
+[color]
+# Colors can be one of seven predefined: black, blue, cyan, green, magenta, red, white, yellow.
+# Or defined by hex code '#xxxxxx' (hex code must be within ''). User defined colors requires
+# a terminal that can change color definitions such as Gnome-terminal or rxvt.
+# default is to keep current terminal color
+background = "#282828"
+
+gradient = 1
+gradient_count = 5
+gradient_color_1 = '#FB4934'
+gradient_color_2 = '#FABD2F'
+gradient_color_3 = '#B8BB26'
+gradient_color_4 = '#689D6A'
+gradient_color_5 = '#458588'
+
+[smoothing]
+# Disables or enables the so-called "Monstercat smoothing" with or without "waves". Set to 0 to disable.
+monstercat=1
+waves=1
