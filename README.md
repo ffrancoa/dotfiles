@@ -2,7 +2,7 @@
 
 ## Fuentes
 
-* UI Body: Cairo Semibold 12 [(Google Fonts)](https://fonts.google.com/specimen/Cairo)
+* UI Body: Cairo Semibold 11.5 [(Google Fonts)](https://fonts.google.com/specimen/Cairo)
 * Terminal: Iosevka Term Semibold 12 [(Nerd Font)](https://www.nerdfonts.com/)
 * Editor: Iosevka SSS05 Semibold 12 [(Fira Mono Style)](https://github.com/be5invis/Iosevka/blob/main/doc/stylistic-sets.md)
 
