@@ -1,5 +1,7 @@
 # Dotfiles
 
+![cover](/screenshots/cover.png)
+
 ## Fuentes
 
 * UI Body: Cairo Semibold 11.5 [(Google Fonts)](https://fonts.google.com/specimen/Cairo)
