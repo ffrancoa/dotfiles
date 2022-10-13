@@ -1,4 +1,4 @@
-# Dotfiles II
+# Dotfiles: Gnome Extensions
 
 ![extensions](/screenshots/extensions.png "Configuración de extensiones")
 

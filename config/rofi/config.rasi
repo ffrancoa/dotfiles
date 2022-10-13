@@ -2,7 +2,7 @@ configuration {
   display-drun:       "Applications";
   show-icons:         true;
   icon-theme:         "Papirus";
-  font:	              "Iosevka Term Semibold 11";
+  font:	              "Cairo Semibold 12";
 }
 
 @theme "~/.config/rofi/theme.rasi"
