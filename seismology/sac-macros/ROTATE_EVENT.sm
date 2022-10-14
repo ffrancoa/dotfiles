@@ -9,12 +9,15 @@
 *   LAT:        The latitude coordinate of the epicenter.                                                   *
 *   LON:        The longitude coordinate of the epicenter.                                                  *
 *                                                                                                           *
-* Example:                                                                                                  *
+* Filename Examples:                                                                                        *
+*   : 20220919.IG.HLIG.HHN.sac      : 20220919.IG.HLIG.HHE.sac                                              *
+* Macro Example:                                                                                            *
 *   > MACRO ROTATE_EVENT STATION HLIG LAT 18.22 LON -103.29                                                 *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 $KEYS STATION LAT LON
 
+INICM
 READ *$STATION$.HHN* *$STATION$.HHE*
 CHNHDR EVLA $LAT EVLO $LON
 WRITEHDR

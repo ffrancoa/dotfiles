@@ -1,0 +1,27 @@
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Program:      LOCAL_MAGNITUDE                                                                             *
+* Author:       Francesco A. Franco                                                                         *
+* Description:  Obtain the local magnitude of a seismic event.                                              *
+*                                                                                                           *
+* Parameters                                                                                                *
+* ----------                                                                                                *
+*   STATION:    The station ID of the radial component of the previosly rotated pair of seismograms.        *
+*   POLEZERO:   The polezero (.PZ) file path for the instrument correction.                                 *
+*                                                                                                           *
+* Filename Example:                                                                                         *
+*   : 20220919.IG.HLIG_R.sac                                                                                *
+* Example:                                                                                                  *
+*   > MACRO ROTATE_EVENT STATION HLIG LAT 18.22 LON -103.29                                                 *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+$KEYS STATION POLEZERO
+
+INICM
+READ *$STATION$_R*
+LISTHDR DIST
+RMEAN
+RTREND
+TRANSFER FROM POLEZERO SUBTYPE $POLEZERO to WA
+WRITE $STATION$_WA.sac
+QDP OFF
+PLOTPK
