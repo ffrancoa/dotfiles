@@ -1,0 +1,23 @@
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Program:      ROTATE_EVENT                                                                                *
+* Author:       Francesco A. Franco                                                                         *
+* Description:  Rotate a pair of seismograms in order to obtein ther radial and transversal component.      *
+*                                                                                                           *
+* Parameters                                                                                                *
+* ----------                                                                                                *
+*   STATION:    The common ID of the station, note that you will need the HHN and HHE components.           *
+*   LAT:        The latitude coordinate of the epicenter.                                                   *
+*   LON:        The longitude coordinate of the epicenter.                                                  *
+*                                                                                                           *
+* Example:                                                                                                  *
+*   > MACRO ROTATE_EVENT STATION HLIG LAT 18.22 LON -103.29                                                 *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+$KEYS STATION LAT LON
+
+READ *$STATION$.HHN* *$STATION$.HHE*
+CHNHDR EVLA $LAT EVLO $LON
+WRITEHDR
+ROTATE TO GCP
+WRITE $STATION$_R.sac $STATION$_T.sac
+
